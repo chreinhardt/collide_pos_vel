@@ -2,11 +2,11 @@ objects = tipsy.o
 
 CFLAGS ?= -O3
 
-default: collide_genga
+default: collide_pos_vel
 
-collide_genga: collide_genga.o $(objects) -lm
+collide_pos_vel: collide_pos_vel.o $(objects) -lm
 
-all:	collide_genga
+all:	collide_pos_vel
 
 clean:
 		rm $(objects)
