@@ -103,9 +103,9 @@ void main(int argc, char **argv) {
 					g->pos[1] += y2;
 					g->pos[2] += z2;
 					
-					g->vel[0] = vx2;
-					g->vel[1] = vy2;
-					g->vel[2] = vz2;
+					g->vel[0] += vx2;
+					g->vel[1] += vy2;
+					g->vel[2] += vz2;
 					TipsyAddGas(out,g);
 				} else {
 					fprintf(stderr,"Particle %i is not a gas particle\n",i);
